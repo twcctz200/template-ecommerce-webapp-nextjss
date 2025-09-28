@@ -1869,13 +1869,16 @@
   resolved "https://registry.yarnpkg.com/@contentful/f36-tokens/-/f36-tokens-4.0.1.tgz#1b6a2e3fce11a61b84a855dbeed660989259ba54"
   integrity sha512-NTyMAQcfvhPP8kJgOK5mtjKpErg799iglEb9B45ii4N7aMdph2GNqgv7KBgpogfbTEGBrlKIoH8MUDSV9YNREg==
 
-"@contentful/live-preview@^2.11.1":
-  version "2.11.1"
-  resolved "https://registry.yarnpkg.com/@contentful/live-preview/-/live-preview-2.11.1.tgz#dcaa5cd079cf06f0c747f1a5cfab46037e3bc060"
-  integrity sha512-Oh7soO3IYq/PGdOdxdAa9+ecc1kx9jnUaZ2/n+uPP6YRFgMCr1+OAlRhyWHYVkqa2TFBoaROiiZR5RpzauWFMA==
+"@contentful/live-preview@^2.17.4":
+  version "2.17.4"
+  resolved "https://registry.yarnpkg.com/@contentful/live-preview/-/live-preview-2.17.4.tgz#a86c857885aca4536a1a0592a98e66e203e4588e"
+  integrity sha512-8qrTEBl8f2clr4VLnD706qnajRDzje28gxZxEcqv3RdOSX6oulIPYQ+2BZgpaZ18BdPZ9AAd+IT3xqdEl9xKLg==
   dependencies:
     "@contentful/rich-text-types" "^16.2.0"
-    "@contentful/visual-sdk" "^1.0.0-alpha.21"
+    "@contentful/visual-sdk" "^1.0.0-alpha.34"
+    "@vercel/stega" "^0.1.0"
+    graphql-tag "^2.12.6"
+    json-pointer "^0.6.2"
     lodash.isequal "^4.5.0"
 
 "@contentful/rich-text-types@^16.2.0":
@@ -1883,10 +1886,10 @@
   resolved "https://registry.yarnpkg.com/@contentful/rich-text-types/-/rich-text-types-16.3.0.tgz#d44145a43b32d61eb4d6a82d3001cdfddbbda42e"
   integrity sha512-OfQmAu5bxE0CgQA3WlUleVej+ifFG/iXmB2DmUl4EyWyFue1aiIvfjxQhcDRSH4n1jUNMJ6L1wInZL8uV5m3TQ==
 
-"@contentful/visual-sdk@^1.0.0-alpha.21":
-  version "1.0.0-alpha.21"
-  resolved "https://registry.yarnpkg.com/@contentful/visual-sdk/-/visual-sdk-1.0.0-alpha.21.tgz#f58b5030b55d20747c84ad094644c8b577715172"
-  integrity sha512-mqq9t42msPo3hXHdiRmqbjkwgOFMhyXRONyyeesPTCXNgyIIRV8DY+zkrn4p36JNc3L1W3u9lic2d9vY6LfWNQ==
+"@contentful/visual-sdk@^1.0.0-alpha.34":
+  version "1.0.0-alpha.34"
+  resolved "https://registry.yarnpkg.com/@contentful/visual-sdk/-/visual-sdk-1.0.0-alpha.34.tgz#c193aaca5b64ecb34c62903594423b9be36de35c"
+  integrity sha512-umPTFWfh3gNNmruyIRD5jgcQQN3KIzSd/6DaoTxPpz+ud3O+g4zYItytJoD0iZaEz1+V9ciVFw+C5+Xe57RvMg==
 
 "@corex/deepmerge@^4.0.29":
   version "4.0.29"
@@ -3379,6 +3382,11 @@
   dependencies:
     "@typescript-eslint/types" "5.44.0"
     eslint-visitor-keys "^3.3.0"
+
+"@vercel/stega@^0.1.0":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@vercel/stega/-/stega-0.1.2.tgz#0c20c5c9419c4288b1de58a64b5f9f26c763b25f"
+  integrity sha512-P7mafQXjkrsoyTRppnt0N21udKS9wUmLXHRyP9saLXLHw32j/FgUJ3FscSWgvSqRs4cj7wKZtwqJEvWJ2jbGmA==
 
 "@whatwg-node/fetch@0.5.3", "@whatwg-node/fetch@^0.5.0":
   version "0.5.3"
@@ -5184,6 +5192,11 @@ focus-lock@^0.11.2:
   dependencies:
     tslib "^2.0.3"
 
+foreach@^2.0.4:
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/foreach/-/foreach-2.0.6.tgz#87bcc8a1a0e74000ff2bf9802110708cfb02eb6e"
+  integrity sha512-k6GAGDyqLe9JaebCsFCoudPPWfihKu8pylYXRlqP1J7ms39iPoTtk2fviNglIeQEwdh0bQeKJ01ZPyuyQvKzwg==
+
 form-data-encoder@^1.7.1:
   version "1.7.2"
   resolved "https://registry.yarnpkg.com/form-data-encoder/-/form-data-encoder-1.7.2.tgz#1f1ae3dccf58ed4690b86d87e4f57c654fbab040"
@@ -5466,7 +5479,7 @@ graphql-request@^5.0.0:
     extract-files "^9.0.0"
     form-data "^3.0.0"
 
-graphql-tag@^2.11.0:
+graphql-tag@^2.11.0, graphql-tag@^2.12.6:
   version "2.12.6"
   resolved "https://registry.yarnpkg.com/graphql-tag/-/graphql-tag-2.12.6.tgz#d441a569c1d2537ef10ca3d1633b48725329b5f1"
   integrity sha512-FdSNcu2QQcWnM2VNvSCCDCVS5PpPqpzgFT8+GXzqJuoDd0CBncxCY278u4mhRO7tMgo2JjgJA5aZ+nWSQ/Z+xg==
@@ -6067,6 +6080,13 @@ json-parse-even-better-errors@^2.3.0:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/json-parse-even-better-errors/-/json-parse-even-better-errors-2.3.1.tgz#7c47805a94319928e05777405dc12e1f7a4ee02d"
   integrity sha512-xyFwyhro/JEof6Ghe2iz2NcXoj2sloNsWr/XsERDK/oiPCfaNhl5ONfp+jQdAZRQQ0IJWNzH9zIZF7li91kh2w==
+
+json-pointer@^0.6.2:
+  version "0.6.2"
+  resolved "https://registry.yarnpkg.com/json-pointer/-/json-pointer-0.6.2.tgz#f97bd7550be5e9ea901f8c9264c9d436a22a93cd"
+  integrity sha512-vLWcKbOaXlO+jvRy4qNd+TI1QUPZzfJj1tpJ3vAXDych5XJf93ftpUKe5pKCrzyIIwgBJcOcCVRUfqQP25afBw==
+  dependencies:
+    foreach "^2.0.4"
 
 json-schema-traverse@^0.4.1:
   version "0.4.1"
