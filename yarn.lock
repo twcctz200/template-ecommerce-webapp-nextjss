@@ -2759,10 +2759,10 @@
   dependencies:
     glob "7.1.7"
 
-"@next/font@13.0.5":
-  version "13.0.5"
-  resolved "https://registry.yarnpkg.com/@next/font/-/font-13.0.5.tgz#db0ef389d926d3a8b649db8aa76e67f9502a478f"
-  integrity sha512-NrP4B8pxwerrkkuG/m7MQv0ks89Kk4Lc0kzbiRaYX+Xb0coDaw+I9T+g42aOHf8j8ta1vtKqb5XE1+troZ4CoQ==
+"@next/font@13.5.11":
+  version "13.5.11"
+  resolved "https://registry.yarnpkg.com/@next/font/-/font-13.5.11.tgz#d91a524d359b4ae76c9f660420f4d133d99c7bcc"
+  integrity sha512-C4fRIb3O0Dh/Wi8hE1lkHDKmR5leUfe4fG+wfuRX8p3PPeduvJYMcU/Wq5eU3XEl2XqMeOuVbLCd2DAH/8Er2Q==
 
 "@next/swc-android-arm-eabi@13.0.5":
   version "13.0.5"
